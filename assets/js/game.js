@@ -1,4 +1,4 @@
-/* GAME FUNCTIONS */
+// GAME FUNCTIONS 
 
 // function to generate a random numeric value
 var randomNumber = function (min, max) {
@@ -144,14 +144,17 @@ var shop = function () {
     switch (shopOptionPrompt) {
         case 'REFILL':
         case 'refill':
+        case 'Refill':
             playerInfo.refillHealth();
             break;
         case 'UPGRADE':
         case 'upgrade':
+        case 'Upgrade':
             playerInfo.upgradeAttack();
             break;
         case 'LEAVE':
         case 'leave':
+        case 'Leave':
             window.alert('Leaving the store.');
 
             // do nothing, so function will end
@@ -205,15 +208,15 @@ var playerInfo = {
 // enemy information
 var enemyInfo = [
     {
-        name: 'Roborto',
+        name: 'Bad Megatron',
         attack: randomNumber(10, 14)
     },
     {
-        name: 'Amy Android',
+        name: 'Optimus Prime',
         attack: randomNumber(10, 14)
     },
     {
-        name: 'Robo Trumble',
+        name: 'Perry The Platipus',
         attack: randomNumber(10, 14)
     }
 ];
